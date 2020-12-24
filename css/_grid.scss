@@ -31,8 +31,8 @@
 
 //背景圖不跑版基本設定
 @mixin background_image_set {
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 //按鈕設計
@@ -46,7 +46,6 @@
     @include p-y(5px);
     font-size: 20px;
     cursor: pointer;
-
 }
 
 //以下為響應式設定

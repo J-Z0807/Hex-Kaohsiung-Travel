@@ -9,10 +9,16 @@ body {
   padding-top: 89px;
   padding-bottom: 107px;
   background: url(../image/Hero.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   background-position: top center;
   max-height: 300px;
+}
+
+@media (max-width: 426px) {
+  .header__area {
+    background: url(../image/the-urban-landscape-1698285.png);
+  }
 }
 
 .header__area .header__title {
@@ -221,10 +227,122 @@ body {
   }
 }
 
+.main__area .main__area_title {
+  padding-top: 50px;
+  text-align: center;
+  color: #8A82CC;
+}
+
 .main__area .main__area--noSelect {
-  margin: 0;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
+  color: #8A82CC;
+}
+
+.main__area .main__card__container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__area .main__card {
+  width: 32.33333%;
+  margin-bottom: 30px;
+  margin-right: 1%;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.main__area .main__card:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .main__area .main__card {
+    width: 49%;
+  }
+}
+
+@media (max-width: 426px) {
+  .main__area .main__card {
+    width: 100%;
+  }
+}
+
+.main__area .main__card .main__card_header {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  height: 155px;
+  position: relative;
+}
+
+.main__area .main__card .main__card__location {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000000)) !important;
+  background: linear-gradient(to bottom, transparent, #000000) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.main__area .main__card .main__card__location .main__card__location__title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 50px;
+  margin-left: 25px;
+}
+
+.main__area .main__card .main__card__location .main__card__location__name {
+  font-size: 16px;
+  margin-right: 25px;
+}
+
+.main__area .main__card .main__card_body {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .main__area .main__card .main__card_body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.main__area .main__card .main__card_body img {
+  margin-right: 5px;
+}
+
+.main__area .main__card .main__card_body .main__card__body__address {
+  margin-bottom: 0;
+}
+
+.main__area .main__card .main__card_body .main__card__body__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__area .main__card .main__card_body .main__card__body__phone {
+  margin-left: 3px;
 }
 /*# sourceMappingURL=all.css.map */

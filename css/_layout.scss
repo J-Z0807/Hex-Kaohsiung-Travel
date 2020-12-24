@@ -15,6 +15,10 @@ body {
     background-position: top center;
     max-height: 300px;
 
+    @include mobile-L {
+        background: url(../image/the-urban-landscape-1698285.png);
+    }
+
     .header__title {
         margin: 0;
         font-size: 40px;
