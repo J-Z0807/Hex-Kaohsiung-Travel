@@ -1,0 +1,137 @@
+//初始之設定
+body {
+    margin: 0;
+    font-family: cursive;
+}
+
+//頁首之樣式設定
+.header__area {
+    position: relative;
+    margin: 0;
+    padding-top: 89px;
+    padding-bottom: 107px;
+    background: url(../image/Hero.png);
+    @include background_image_set;
+    background-position: top center;
+    max-height: 300px;
+
+    .header__title {
+        margin: 0;
+        font-size: 40px;
+        color: $white;
+        text-align: center;
+        margin-bottom: 96px;
+
+        @include tablet {
+            margin-bottom: 25px;
+        }
+    }
+
+    .header__location {
+        position: relative;
+        border: 3px solid $white;
+        border-radius: 3px;
+        margin: 0 auto;
+        margin-bottom: 119px;
+        max-width: 452px;
+
+        @include mobile-L {
+            margin-bottom: 50px;
+        }
+
+        select {
+            @include clear_select_icon;
+            font-size: 18px;
+            padding: 10px;
+            width: 100%;
+            border: 0px;
+            background: url('../image/icons_down.png') 95% no-repeat;
+            background-color: $white;
+            opacity: 70%;
+        }
+    }
+
+    .header__popular {
+        border-radius: 5px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+        background-color: $white;
+        max-width: 800px;
+        margin: 180px auto;
+        @include p-x(20px);
+        @include p-y(5px);
+
+        @include tablet {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .header__popular__title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button {
+            @include btn;
+
+            @include mobile-L {
+                margin-left: 45px;
+            }
+
+            @include mobile-M {
+                margin-left: 25px;
+            }
+
+            @include mobile-S {
+                margin-left: 10px;
+            }
+        }
+
+        .header__popular__btn--one {
+            background-color: $purple;
+
+            &:hover {
+                background-color: darken($color: $purple, $amount: 30%);
+            }
+        }
+
+        .header__popular__btn--two {
+            background-color: $light_red;
+
+            &:hover {
+                background-color: darken($color: $light_red, $amount: 30%);
+            }
+        }
+
+        .header__popular__btn--three {
+            background-color: $yellow;
+
+            &:hover {
+                background-color: darken($color: $yellow, $amount: 30%);
+            }
+        }
+
+        .header__popular__btn--four {
+            background-color: $sky_blue;
+
+            &:hover {
+                background-color: darken($color: $sky_blue, $amount: 30%);
+            }
+        }
+    }
+}
+
+//頁尾之樣式設定
+.footer__area {
+    background-color: $sky_blue;
+    font-size: 18px;
+    text-align: center;
+    @include p-y(10px);
+
+    .footer__title {
+        color: $white;
+    }
+
+    .footer__source {
+        color: $orange;
+    }
+}

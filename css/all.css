@@ -1,1 +1,230 @@
-/* No CSS *//*# sourceMappingURL=all.css.map */
+body {
+  margin: 0;
+  font-family: cursive;
+}
+
+.header__area {
+  position: relative;
+  margin: 0;
+  padding-top: 89px;
+  padding-bottom: 107px;
+  background: url(../image/Hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  max-height: 300px;
+}
+
+.header__area .header__title {
+  margin: 0;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+@media (max-width: 768px) {
+  .header__area .header__title {
+    margin-bottom: 25px;
+  }
+}
+
+.header__area .header__location {
+  position: relative;
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 119px;
+  max-width: 452px;
+}
+
+@media (max-width: 426px) {
+  .header__area .header__location {
+    margin-bottom: 50px;
+  }
+}
+
+.header__area .header__location select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  border: 0px;
+  background: url("../image/icons_down.png") 95% no-repeat;
+  background-color: #FFFFFF;
+  opacity: 70%;
+}
+
+.header__area .header__popular {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+  max-width: 800px;
+  margin: 180px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .header__area .header__popular {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.header__area .header__popular .header__popular__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header__area .header__popular button {
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 0;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 426px) {
+  .header__area .header__popular button {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 376px) {
+  .header__area .header__popular button {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__area .header__popular button {
+    margin-left: 10px;
+  }
+}
+
+.header__area .header__popular .header__popular__btn--one {
+  background-color: #8A82CC;
+}
+
+.header__area .header__popular .header__popular__btn--one:hover {
+  background-color: #3d3481;
+}
+
+.header__area .header__popular .header__popular__btn--two {
+  background-color: #FFA782;
+}
+
+.header__area .header__popular .header__popular__btn--two:hover {
+  background-color: #e84500;
+}
+
+.header__area .header__popular .header__popular__btn--three {
+  background-color: #F5D105;
+}
+
+.header__area .header__popular .header__popular__btn--three:hover {
+  background-color: #5f5102;
+}
+
+.header__area .header__popular .header__popular__btn--four {
+  background-color: #559AC8;
+}
+
+.header__area .header__popular .header__popular__btn--four:hover {
+  background-color: #204964;
+}
+
+.footer__area {
+  background-color: #559AC8;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer__area .footer__title {
+  color: #FFFFFF;
+}
+
+.footer__area .footer__source {
+  color: #FFD366;
+}
+
+.main__area {
+  background-color: #f7f7f7;
+  padding-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .main__area {
+    padding-top: 60px;
+  }
+}
+
+.main__area .main__dividerLine {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-top: 2px dashed #559AC8;
+  max-height: 1px;
+}
+
+@media (max-width: 426px) {
+  .main__area .main__dividerLine {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+}
+
+@media (max-width: 376px) {
+  .main__area .main__dividerLine {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+
+.main__area .main__dividerLine .fa-sort-down {
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 48%;
+  top: -18px;
+  color: #559AC8;
+  font-size: 24px;
+  border: 2px solid #559AC8;
+  border-radius: 50%;
+  padding: 5px;
+  height: 15px;
+  line-height: 9px;
+}
+
+@media (max-width: 426px) {
+  .main__area .main__dividerLine .fa-sort-down {
+    left: 47%;
+  }
+}
+
+@media (max-width: 320px) {
+  .main__area .main__dividerLine .fa-sort-down {
+    left: 45%;
+  }
+}
+
+.main__area .main__area--noSelect {
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+/*# sourceMappingURL=all.css.map */

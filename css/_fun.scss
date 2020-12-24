@@ -1,4 +1,4 @@
 //控制不透明度
-@function opacity($color, $value) {
-    @return opacity($color, $value)
+@function change_opacity($color, $value) {
+    @return rgba($color, $value);
 }
