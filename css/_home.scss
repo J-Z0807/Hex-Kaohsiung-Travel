@@ -51,10 +51,15 @@
         color: $purple;
     }
 
-    .main__area--noSelect {
-        @include p-y(100px);
+    .main__area--noSelect,
+    .main__area--noData {
+        @include p-y(50px);
         text-align: center;
         color: $purple;
+    }
+
+    .main__area--noData {
+        display: none;
     }
 
     .main__card__container {
@@ -96,7 +101,7 @@
             width: 100%;
 
             .main__card__location__title {
-                font-size: 24px;
+                font-size: 22px;
                 @include m-y(0);
                 line-height: 50px;
                 margin-left: 25px;
@@ -111,7 +116,6 @@
         .main__card_body {
             @include p-x(30px);
             @include p-y(10px);
-            position: relative;
 
             @include tablet {
                 @include p-x(10px);
@@ -133,16 +137,16 @@
             .main__card__body__phone {
                 margin-left: 3px;
             }
+        }
+    }
 
-            .goTop {
-                position: absolute;
-                right: -15px;
-                bottom: -5px;
+    .goTop {
+        position: fixed;
+        right: 0px;
+        bottom: 180px;
 
-                &:hover {
-                    opacity: 0.5;
-                }
-            }
+        &:hover {
+            opacity: 0.5;
         }
     }
 

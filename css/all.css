@@ -6,6 +6,7 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
 }
 
 a:hover {
@@ -242,11 +243,16 @@ a:hover {
   color: #8A82CC;
 }
 
-.main__area .main__area--noSelect {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.main__area .main__area--noSelect,
+.main__area .main__area--noData {
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   color: #8A82CC;
+}
+
+.main__area .main__area--noData {
+  display: none;
 }
 
 .main__area .main__card__container {
@@ -303,7 +309,7 @@ a:hover {
 }
 
 .main__area .main__card .main__card__location .main__card__location__title {
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 50px;
@@ -320,7 +326,6 @@ a:hover {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -351,13 +356,13 @@ a:hover {
   margin-left: 3px;
 }
 
-.main__area .main__card .main__card_body .goTop {
-  position: absolute;
-  right: -15px;
-  bottom: -5px;
+.main__area .goTop {
+  position: fixed;
+  right: 0px;
+  bottom: 180px;
 }
 
-.main__area .main__card .main__card_body .goTop:hover {
+.main__area .goTop:hover {
   opacity: 0.5;
 }
 
