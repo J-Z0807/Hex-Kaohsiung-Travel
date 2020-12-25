@@ -374,6 +374,10 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 320px) {
@@ -387,6 +391,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main__area .main__changePage li {
@@ -399,5 +405,9 @@ a:hover {
 
 .main__area .main__changePage .disabled {
   color: gray;
+}
+
+.main__area .main__changePage .overflow {
+  display: none;
 }
 /*# sourceMappingURL=all.css.map */
