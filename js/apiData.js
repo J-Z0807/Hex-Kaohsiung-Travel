@@ -52,7 +52,7 @@ function location_dataGet(location){
     htmlContent[page_count] = ""; //先將內容清空;才不會下面+=的時候出現undefined的錯誤
 
     for(let i = 0; i < Data.length; i++){
-        if(location == "全部區域"){
+        if(location == "全部區域"){ 
             data_screen_add(i);
         }
         else{
