@@ -31,8 +31,6 @@ $(document).ready(function(){
 
 //地區資料快速查詢方法
 function location_dataGet(location){
-    console.log(Data);
-    
     var card_container = document.querySelector('.main__card__container');
     var meet_index = 0; //用來計算總共符合該地區資料的總比數
     var page_count = 0; //計算有幾頁
