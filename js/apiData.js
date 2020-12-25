@@ -66,7 +66,7 @@ function location_dataGet(location){
         //資料大於12時就要開始做分頁區塊了
         var page_container = document.querySelector('.main__changePage ul');
         //初始新增一個上一頁按鈕;目前為第一頁的話就不能點選上一頁
-        var page_html = ""; 
+        var page_html = "";
         var overflow_str = ""; //看是否超過最大頁數，如超過則加入隱藏元素
 
         if(current == 1){
