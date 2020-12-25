@@ -4,6 +4,15 @@ body {
     font-family: cursive;
 }
 
+a {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+        color: $red;
+    }
+}
+
 //頁首之樣式設定
 .header__area {
     position: relative;
