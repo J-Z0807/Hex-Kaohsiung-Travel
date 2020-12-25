@@ -4,6 +4,7 @@ var current = 1; //目前頁面
 var meet_index = 0; //用來計算總共符合該地區資料的總比數
 var page_count = 0; //計算有幾頁
 var current_changePage = 0; //用來計算切換了幾次分頁(每五個為一筆)
+var page_html = "";//頁面按鈕HTML字串元素
 
 $(document).ready(function(){
     //網頁載入完成後就去抓取API資料
@@ -36,8 +37,11 @@ $(document).ready(function(){
 //地區資料快速查詢方法
 function location_dataGet(location){
     var card_container = document.querySelector('.main__card__container');
+    var page_container = document.querySelector('.main__changePage ul');
     meet_index = 0; //用來計算總共符合該地區資料的總比數
     page_count = 0; //計算有幾頁
+    page_html = "";//初始頁面按鈕
+    current = 1; //將頁面初始化
     htmlContent = []; //每點選新的區域時就會清空所有資料
 
     //初始化
@@ -64,9 +68,6 @@ function location_dataGet(location){
     }
     else if(meet_index > 12){
         //資料大於12時就要開始做分頁區塊了
-        var page_container = document.querySelector('.main__changePage ul');
-        //初始新增一個上一頁按鈕;目前為第一頁的話就不能點選上一頁
-        var page_html = "";
         var overflow_str = ""; //看是否超過最大頁數，如超過則加入隱藏元素
 
         if(current == 1){
@@ -94,11 +95,13 @@ function location_dataGet(location){
 
         page_html += `<li><a class="next" onclick="change_page(${current+1})">${$(window).width()<375 ? "＞" : "next＞"}</a></li>`; //頁數跑完後改跑下一頁按鈕
 
-        page_container.innerHTML = page_html;
     }
 
     //呈現目前頁面資料
     card_container.innerHTML = htmlContent[current-1]; //因為陣列是從0開始，而目前頁面初始是1所以要-1
+
+    //更新頁數區塊
+    page_container.innerHTML = page_html;
 }
 
 function change_page(page){
